@@ -1,0 +1,72 @@
+CREATE TABLE 'airlines' (
+  'airline_id' int(11) NOT NULL,
+  'airline_at_id' int(11) NOT NULL,
+  'airline_name' varchar(255) NOT NULL,
+  'airline_no' varchar(255) NOT NULL,
+  'airline_from' int(11) NOT NULL,
+  'airline_departure' varchar(255) NOT NULL,
+  'airline_to' int(11) NOT NULL,
+  'airline_arrival' varchar(255) NOT NULL,
+  'airline_travel_time' varchar(255) NOT NULL
+   );
+   
+   /* airline type*/
+ CREATE TABLE 'airlines'(
+   'at_id' int(11) NOT NULL,
+   'at_name' int(11) NOT NULL
+ )
+ 
+ 
+ /* table structure for booking*/
+ 
+ CREATE TABLE 'booking' (
+   'booking_id' int(11) NOT NULL,
+   'booking_user_id' int(11) NOT NULL,
+   'booking_route_id' int(11) NOT NULL,
+   'booking_date' varchar(255) NOT NULL,
+   'booking_total_fare' varchar(255) NOT NULL,
+   'booking_journey_date' varchar(255) NOT NULL,
+   'booking_route_id' int(11) NOT NULL,
+   'booking_seat_type' varchar(255) NOT NULL,
+   'booking_status' varchar(255) NOT NULL DEFAULT '0'
+ 
+ )
+ 
+ /* table structure for city */
+
+CREATE TABLE 'city' (
+  'city_id' int(11) NOT NULL,
+  'city_name' varchar(45) NOT NULL
+)
+
+/* Table structure for passenger */
+
+CREATE TABLE 'passenger' (
+  'passenger_id' int(11) NOT NULL,
+  'passenger_booking_id' int(11) NOT NULL,
+  'passenger_type' varchar(255) NOT NULL,
+  'passenger_name' varchar(255) NOT NULL,
+  'passenger_gender' int(11) NOT NULL,
+  'passenger_age' int(11) NOT NULL,
+  'passenger_booking_id' int(11) NOT NULL
+)
+
+
+CREATE TABLE 'route' (
+  'route_id' int(11) NOT NULL,
+  'route_airlines_id' int(11) NOT NULL,
+  'route_from_city' varchar(255) NOT NULL,
+  'route_from_arrival' varchar(255) NOT NULL,
+  'route_from departure' varchar(255) NOT NULL,
+  'route _to_city' varchar(255) NOT NULL,
+  'route_economy_fare' varchar(255) NOT NULL,
+  'route_business_fare' varchar(255) NOT NULL
+  
+);
+
+
+
+
+
+
+
