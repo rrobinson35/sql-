@@ -1,1 +1,7 @@
+/* I prefer this method of adding primary keys as makes everything easier to visualise */
 
+ALTER TABLE 'airline_type' ADD PRIMARY KEY ('at_id');
+ALTER TABLE 'booking' ADD PRIMARY KEY ('booking_id');
+ALTER TABLE 'city' ADD PRIMARY KEY ('city_id');
+ALTER TABLE 'passenger' ADD PRIMARY KEY ('passenger_id');
+ALTER TABLE 'route' ADD PRIMARY KEY ('route id);
