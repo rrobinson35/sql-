@@ -1,0 +1,3 @@
+SELECT * FROM airline a
+INNER JOIN route r on r.route_airline_id = a.airline_id;
+
