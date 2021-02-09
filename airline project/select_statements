@@ -1,0 +1,15 @@
+/* Total number of records */
+
+SELECT (*) AS 'Total Count' FROM 'airline';
+
+/* maximum travel distance */
+
+SELECT MAX('airline_total_distance')AS 'Maximum Distance', airline.* FROM 'airline'
+
+/* advanced select statement */
+
+SELECT COUNT(*) AS 'TotalCount' ,airline.* FROM airline
+WHERE airline_from = 2
+GROUP BY airline_at_id 
+HAVING TotalCount >= 3
+ORDER BY airline_name LIMIT ,0,3;
